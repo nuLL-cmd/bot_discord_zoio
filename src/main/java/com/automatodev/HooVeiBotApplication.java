@@ -16,7 +16,7 @@ public class HooVeiBotApplication {
 	@Bean
 	public DiscordApi discordApi(){
 
-		String token = "ODk3MTY3ODU5MDc0MDcyNTc2.YWRurg.xKWu3d0KIml58vyn1nIxpNYozzg";
+		String token = "ODk3MTY3ODU5MDc0MDcyNTc2.YWRurg.TQhZDqjGdUKZzSbF-P-mLStV1DY";
 
 		DiscordApi api = new DiscordApiBuilder().setToken(token)
 		.setAllNonPrivilegedIntents()
@@ -34,7 +34,7 @@ public class HooVeiBotApplication {
 
 			}else if(event.getMessageContent().equals(".flws_zoio")){
 
-				mensagem = "E ae....João, Hugo...Hó o Marcão ae... firmeza irmão .....Hugo.... Satisfação aí...Vamo que vamo....pro corre... abraço... aí fica firme...."+
+				mensagem = "E ae....João...Lobinhoo..Hugo...Hó o Marcão ae... firmeza irmão .....Hugo.... Satisfação aí...Vamo que vamo....pro corre... abraço... aí fica firme...."+
 				"\nJoão... Satisfação aí continua assim estudando... Trabalhando...Fazendo os corre mano....Vlw aí rapaziada...flwss.vlwss....flwss";
 				event.getChannel().sendMessage(mensagem);
 
@@ -55,7 +55,7 @@ public class HooVeiBotApplication {
 			}else if(event.getMessageContent().equals(".jao_roupa")){
 
 				mensagem = "TEM QUE..LAVA ROUPA VEI!!....JA LAVOU A ROUPA MANO?";
-				event.getChannel().sendMessage("TEM QUE..LAVA ROUPA VEI!!....JA LAVOU A ROUPA MANO?");
+				event.getChannel().sendMessage(mensagem);
 			}
 
 			UtilLog.getLog().info("Usuario: "+event.getMessageAuthor().getName()+"\nRecebido: "+event.getMessageContent()+"\nEnviado: "+mensagem);
